@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-21T09:56:54 IST" name="Suite" finished-at="2023-11-21T09:56:55 IST" duration-ms="76">
+    <groups>
+    </groups>
+    <test started-at="2023-11-21T09:56:54 IST" name="Test" finished-at="2023-11-21T09:56:55 IST" duration-ms="76">
+      <class name="LearnAnnotation.FirstClass">
+        <test-method is-config="true" signature="TC3()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC3" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3 -->
+        <test-method is-config="true" signature="TC7()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC7" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC7 -->
+        <test-method is-config="true" signature="TC8()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC8" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC8 -->
+        <test-method is-config="true" signature="TC9()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC9" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC9 -->
+        <test-method signature="test1()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="test1" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="TC10()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC10" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10 -->
+        <test-method is-config="true" signature="TC11()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC11" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC11 -->
+        <test-method is-config="true" signature="TC7()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC7" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC7 -->
+        <test-method is-config="true" signature="TC9()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC9" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC9 -->
+        <test-method is-config="true" signature="TC8()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC8" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC8 -->
+        <test-method signature="test2()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="test2" finished-at="2023-11-21T09:56:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="TC10()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC10" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10 -->
+        <test-method is-config="true" signature="TC11()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC11" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC11 -->
+        <test-method is-config="true" signature="TC4()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC4" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4 -->
+        <test-method is-config="true" signature="TC5()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC5" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC5 -->
+        <test-method is-config="true" signature="TC6()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC6" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC6 -->
+      </class> <!-- LearnAnnotation.FirstClass -->
+      <class name="LearnAnnotation.SecondClass">
+        <test-method is-config="true" signature="TC1()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:54 IST" name="TC1" finished-at="2023-11-21T09:56:54 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method is-config="true" signature="TC3()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC3" finished-at="2023-11-21T09:56:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3 -->
+        <test-method is-config="true" signature="TC7()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC7" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC7 -->
+        <test-method is-config="true" signature="TC8()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC8" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC8 -->
+        <test-method is-config="true" signature="TC9()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC9" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC9 -->
+        <test-method signature="test3()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="test3" finished-at="2023-11-21T09:56:55 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="TC10()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC10" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10 -->
+        <test-method is-config="true" signature="TC11()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC11" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC11 -->
+        <test-method is-config="true" signature="TC7()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC7" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC7 -->
+        <test-method is-config="true" signature="TC9()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC9" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC9 -->
+        <test-method signature="test4()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="test4" finished-at="2023-11-21T09:56:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method is-config="true" signature="TC8()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC8" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC8 -->
+        <test-method is-config="true" signature="TC11()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC11" finished-at="2023-11-21T09:56:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC11 -->
+        <test-method is-config="true" signature="TC10()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC10" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10 -->
+        <test-method is-config="true" signature="TC4()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC4" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4 -->
+        <test-method is-config="true" signature="TC5()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC5" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC5 -->
+        <test-method is-config="true" signature="TC6()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC6" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC6 -->
+        <test-method is-config="true" signature="TC2()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC2" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2 -->
+      </class> <!-- LearnAnnotation.SecondClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
