@@ -16,7 +16,7 @@ public class HomePage {
 	@FindBy(xpath = "//li[text()='Open Account']")
 	private WebElement openAccountLink;
 
-	@FindBy(xpath = "Apply Debit Card")
+	@FindBy(xpath = "//li[contains(.,'Apply Debit Card')]")
 	private WebElement applyDebitCardLink;
 
 	@FindBy(xpath = "//a[contains(.,'Internet Banking')]/ancestor::li")
@@ -36,7 +36,7 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 
-	//Utilisation
+	// Utilisation
 	public WebElement getStaffLoginLink() {
 		return staffLoginLink;
 	}
@@ -68,7 +68,5 @@ public class HomePage {
 	public WebElement getFundTransferLink() {
 		return fundTransferLink;
 	}
-	
-	
 
 }
