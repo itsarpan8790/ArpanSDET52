@@ -10,21 +10,22 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
+import com.beust.jcommander.Parameter;
 import com.bixi.genericutility.FileUtility;
 
 public class BaseClass {
 	public FileUtility fUtil = new FileUtility();
 	public WebDriver driver; 
 	
-
+   @Parameters("GATEWAY")
 	@BeforeClass(alwaysRun = true)
-	public void openBrowser() throws Throwable {
-		String BROWSER=fUtil.readDataFromPropertyFile("browser");
-		System.out.println(BROWSER);
-		if(BROWSER.equals("chrome"))
+	public void openBrowser(String GATEWAY) throws Throwable {
+		//String BROWSER=fUtil.readDataFromPropertyFile("browser");
+		if(GATEWAY.equals("chrome"))
 		driver = new ChromeDriver();
-		else if (BROWSER.equals("firefox"))
+		else if (GATEWAY.equals("firefox"))
 			driver = new FirefoxDriver();
 		else
 			System.out.println("---invalid browser---");

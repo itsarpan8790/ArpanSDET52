@@ -23,5 +23,10 @@ public class GroupExecutionClass {
 	public void method4() {
 		System.out.println("method4");
 	}
+	
+	@Test(groups = {"smoke","regression"})
+	public void method5() {
+		System.out.println("method4");
+	}
 
 }

@@ -1,15 +1,9 @@
 package com.bixi.BaseTestScripts;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import com.bixi.genericutility.BaseClass;
-import com.bixi.genericutility.ExcelUtility;
-import com.bixi.genericutility.FileUtility;
-import com.bixi.genericutility.JavaUtility;
-import com.bixi.genericutility.WebDriverUtility;
 import com.bixi.pom.CustomerLoginPage;
 import com.bixi.pom.Customer_Pass_ChangePage;
 import com.bixi.pom.Customer_ProfilePage;
@@ -18,7 +12,7 @@ import com.bixi.pom.HomePage;
 
 public class InternetBankingTest extends BaseClass {
 
-	@Test
+	@Test(groups = "system")
 	public void iBankingChangePassword() throws Throwable {
 
 		// Step 1. MouseHovering and clicking Login
@@ -65,7 +59,7 @@ public class InternetBankingTest extends BaseClass {
 
 	}
 
-	@Test
+	@Test(groups = "smoke")
 	public void registerForIBAnotherTab() throws Throwable {
 
 		HomePage hp = new HomePage(driver);
@@ -89,7 +83,7 @@ public class InternetBankingTest extends BaseClass {
 
 	}
 
-	@Test
+	@Test(groups = "smoke")
 	public void regiterForIBankingAndRefresh_ManTC13() throws Throwable {
 
 		HomePage hp = new HomePage(driver);

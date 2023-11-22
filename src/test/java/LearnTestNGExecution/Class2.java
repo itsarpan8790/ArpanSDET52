@@ -2,14 +2,14 @@ package LearnTestNGExecution;
 
 import org.testng.annotations.Test;
 
-public class Class2 extends BaseClass {
+public class Class2  {
 	
-	@Test
+	@Test(groups = "smoke")
 	public void method3() {
 		System.out.println("method3");
 	}
 	
-	@Test
+	@Test(groups = "regression")
 	public void method4() {
 		System.out.println("method4");
 	}

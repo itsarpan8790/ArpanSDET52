@@ -5,12 +5,12 @@ import org.testng.annotations.Test;
 
 
 public class Class3 extends BaseClass {
-	@Test
+	@Test(groups = { "smoke", "regression" })
 	public void method5() {
 		System.out.println("method5");
 	}
 	
-	@Test
+	@Test(groups = { "smoke", "regression" })
 	public void method6() {
 		System.out.println("method6");
 	}

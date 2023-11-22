@@ -2,29 +2,17 @@ package com.bixi.BaseTestScripts;
 
 import java.util.ArrayList;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-import com.bixi.genericutility.ExcelUtility;
-import com.bixi.genericutility.FileUtility;
-import com.bixi.genericutility.JavaUtility;
-import com.bixi.genericutility.WebDriverUtility;
+import com.bixi.genericutility.BaseClass;
 import com.bixi.pom.AccountRegistrationFormPage;
 import com.bixi.pom.Customer_RegForm_ConfirmPage;
 import com.bixi.pom.HomePage;
 
-public class OpenAccountTest {
-	public void applyNewBankAccount_NeyazTC05() throws Throwable {
-		WebDriverUtility wUtil = new WebDriverUtility();
-		JavaUtility jUtil = new JavaUtility();
-		FileUtility fUtil = new FileUtility();
-		ExcelUtility eUtil = new ExcelUtility();
+public class OpenAccountTest extends BaseClass {
 
-		String URL = fUtil.readDataFromPropertyFile("url");
-		WebDriver driver = new ChromeDriver();
-		driver.get(URL);
-		wUtil.maximizeWindow(driver);
-		wUtil.implicitWait(driver, 10);
+	@Test(groups="regression")
+	public void applyNewBankAccount_NeyazTC05() throws Throwable {
 
 		ArrayList<String> al = new ArrayList<String>();
 		int rowCount = eUtil.getLastRowNumber("NeyazUTC_05");

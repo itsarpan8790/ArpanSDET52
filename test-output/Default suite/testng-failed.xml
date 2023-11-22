@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bixi.BaseTestScripts.InternetBankingTest">
+      <class name="com.bixi.BaseTestScripts.DebitCardTest">
         <methods>
           <include name="confif_BM"/>
-          <include name="iBankingChangePassword"/>
+          <include name="applyForDebitCardWithBlankFields_NeyazTC15"/>
           <include name="confif_AC"/>
           <include name="confif_BS"/>
         </methods>
-      </class> <!-- com.bixi.BaseTestScripts.InternetBankingTest -->
+      </class> <!-- com.bixi.BaseTestScripts.DebitCardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
