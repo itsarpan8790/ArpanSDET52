@@ -1,151 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-21T09:56:54 IST" name="Suite" finished-at="2023-11-21T09:56:55 IST" duration-ms="76">
+  <suite started-at="2023-11-22T10:42:30 IST" name="Suite" finished-at="2023-11-22T10:43:57 IST" duration-ms="87019">
     <groups>
     </groups>
-    <test started-at="2023-11-21T09:56:54 IST" name="Test" finished-at="2023-11-21T09:56:55 IST" duration-ms="76">
-      <class name="LearnAnnotation.FirstClass">
-        <test-method is-config="true" signature="TC3()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC3" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+    <test started-at="2023-11-22T10:42:30 IST" name="Test" finished-at="2023-11-22T10:43:57 IST" duration-ms="87019">
+      <class name="LearnTestNGExecution.Class3">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:LearnTestNGExecution.Class3@5ab956d7]" started-at="2023-11-22T10:43:16 IST" name="openBrowser" finished-at="2023-11-22T10:43:19 IST" duration-ms="2082" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC3 -->
-        <test-method is-config="true" signature="TC7()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC7" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LearnTestNGExecution.Class3@5ab956d7]" started-at="2023-11-22T10:43:19 IST" name="login" finished-at="2023-11-22T10:43:25 IST" duration-ms="6920" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC7 -->
-        <test-method is-config="true" signature="TC8()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC8" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="method5()[pri:0, instance:LearnTestNGExecution.Class3@5ab956d7]" started-at="2023-11-22T10:43:25 IST" name="method5" finished-at="2023-11-22T10:43:25 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC8 -->
-        <test-method is-config="true" signature="TC9()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC9" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- method5 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:LearnTestNGExecution.Class3@5ab956d7]" started-at="2023-11-22T10:43:25 IST" name="logout" finished-at="2023-11-22T10:43:28 IST" duration-ms="2948" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC9 -->
-        <test-method signature="test1()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="test1" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LearnTestNGExecution.Class3@5ab956d7]" started-at="2023-11-22T10:43:28 IST" name="login" finished-at="2023-11-22T10:43:32 IST" duration-ms="3908" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="TC10()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC10" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="method6()[pri:0, instance:LearnTestNGExecution.Class3@5ab956d7]" started-at="2023-11-22T10:43:32 IST" name="method6" finished-at="2023-11-22T10:43:32 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC10 -->
-        <test-method is-config="true" signature="TC11()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC11" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- method6 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:LearnTestNGExecution.Class3@5ab956d7]" started-at="2023-11-22T10:43:32 IST" name="logout" finished-at="2023-11-22T10:43:37 IST" duration-ms="4949" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC11 -->
-        <test-method is-config="true" signature="TC7()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC7" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:LearnTestNGExecution.Class3@5ab956d7]" started-at="2023-11-22T10:43:37 IST" name="CloseBrowser" finished-at="2023-11-22T10:43:37 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC7 -->
-        <test-method is-config="true" signature="TC9()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC9" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- LearnTestNGExecution.Class3 -->
+      <class name="LearnTestNGExecution.Class4">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:LearnTestNGExecution.Class4@3e27aa33]" started-at="2023-11-22T10:43:37 IST" name="openBrowser" finished-at="2023-11-22T10:43:39 IST" duration-ms="1657" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC9 -->
-        <test-method is-config="true" signature="TC8()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC8" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LearnTestNGExecution.Class4@3e27aa33]" started-at="2023-11-22T10:43:39 IST" name="login" finished-at="2023-11-22T10:43:44 IST" duration-ms="4542" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC8 -->
-        <test-method signature="test2()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="test2" finished-at="2023-11-21T09:56:55 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="method7()[pri:0, instance:LearnTestNGExecution.Class4@3e27aa33]" started-at="2023-11-22T10:43:44 IST" name="method7" finished-at="2023-11-22T10:43:44 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="TC10()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC10" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method7 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:LearnTestNGExecution.Class4@3e27aa33]" started-at="2023-11-22T10:43:44 IST" name="logout" finished-at="2023-11-22T10:43:48 IST" duration-ms="4579" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC10 -->
-        <test-method is-config="true" signature="TC11()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC11" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LearnTestNGExecution.Class4@3e27aa33]" started-at="2023-11-22T10:43:48 IST" name="login" finished-at="2023-11-22T10:43:52 IST" duration-ms="3771" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC11 -->
-        <test-method is-config="true" signature="TC4()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC4" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="method8()[pri:0, instance:LearnTestNGExecution.Class4@3e27aa33]" started-at="2023-11-22T10:43:52 IST" name="method8" finished-at="2023-11-22T10:43:52 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC4 -->
-        <test-method is-config="true" signature="TC5()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC5" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method8 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:LearnTestNGExecution.Class4@3e27aa33]" started-at="2023-11-22T10:43:52 IST" name="logout" finished-at="2023-11-22T10:43:57 IST" duration-ms="4750" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC5 -->
-        <test-method is-config="true" signature="TC6()[pri:0, instance:LearnAnnotation.FirstClass@740cae06]" started-at="2023-11-21T09:56:55 IST" name="TC6" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:LearnTestNGExecution.Class4@3e27aa33]" started-at="2023-11-22T10:43:57 IST" name="CloseBrowser" finished-at="2023-11-22T10:43:57 IST" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC6 -->
-      </class> <!-- LearnAnnotation.FirstClass -->
-      <class name="LearnAnnotation.SecondClass">
-        <test-method is-config="true" signature="TC1()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:54 IST" name="TC1" finished-at="2023-11-21T09:56:54 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- LearnTestNGExecution.Class4 -->
+      <class name="LearnTestNGExecution.Class1">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:LearnTestNGExecution.Class1@13e344d]" started-at="2023-11-22T10:42:30 IST" name="openBrowser" finished-at="2023-11-22T10:42:38 IST" duration-ms="7722" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC1 -->
-        <test-method is-config="true" signature="TC3()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC3" finished-at="2023-11-21T09:56:55 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LearnTestNGExecution.Class1@13e344d]" started-at="2023-11-22T10:42:38 IST" name="login" finished-at="2023-11-22T10:42:43 IST" duration-ms="4878" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC3 -->
-        <test-method is-config="true" signature="TC7()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC7" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="method1()[pri:0, instance:LearnTestNGExecution.Class1@13e344d]" started-at="2023-11-22T10:42:43 IST" name="method1" finished-at="2023-11-22T10:42:43 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC7 -->
-        <test-method is-config="true" signature="TC8()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC8" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method1 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:LearnTestNGExecution.Class1@13e344d]" started-at="2023-11-22T10:42:43 IST" name="logout" finished-at="2023-11-22T10:42:47 IST" duration-ms="4589" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC8 -->
-        <test-method is-config="true" signature="TC9()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC9" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LearnTestNGExecution.Class1@13e344d]" started-at="2023-11-22T10:42:47 IST" name="login" finished-at="2023-11-22T10:42:51 IST" duration-ms="3820" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC9 -->
-        <test-method signature="test3()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="test3" finished-at="2023-11-21T09:56:55 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="method2()[pri:0, instance:LearnTestNGExecution.Class1@13e344d]" started-at="2023-11-22T10:42:51 IST" name="method2" finished-at="2023-11-22T10:42:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="TC10()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC10" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method2 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:LearnTestNGExecution.Class1@13e344d]" started-at="2023-11-22T10:42:51 IST" name="logout" finished-at="2023-11-22T10:42:56 IST" duration-ms="4669" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC10 -->
-        <test-method is-config="true" signature="TC11()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC11" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:LearnTestNGExecution.Class1@13e344d]" started-at="2023-11-22T10:42:56 IST" name="CloseBrowser" finished-at="2023-11-22T10:42:56 IST" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC11 -->
-        <test-method is-config="true" signature="TC7()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC7" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- LearnTestNGExecution.Class1 -->
+      <class name="LearnTestNGExecution.Class2">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:LearnTestNGExecution.Class2@2892d68]" started-at="2023-11-22T10:42:56 IST" name="openBrowser" finished-at="2023-11-22T10:42:58 IST" duration-ms="1612" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC7 -->
-        <test-method is-config="true" signature="TC9()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC9" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LearnTestNGExecution.Class2@2892d68]" started-at="2023-11-22T10:42:58 IST" name="login" finished-at="2023-11-22T10:43:03 IST" duration-ms="4926" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC9 -->
-        <test-method signature="test4()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="test4" finished-at="2023-11-21T09:56:55 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="method3()[pri:0, instance:LearnTestNGExecution.Class2@2892d68]" started-at="2023-11-22T10:43:03 IST" name="method3" finished-at="2023-11-22T10:43:03 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method is-config="true" signature="TC8()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC8" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method3 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:LearnTestNGExecution.Class2@2892d68]" started-at="2023-11-22T10:43:03 IST" name="logout" finished-at="2023-11-22T10:43:07 IST" duration-ms="4567" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC8 -->
-        <test-method is-config="true" signature="TC11()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC11" finished-at="2023-11-21T09:56:55 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LearnTestNGExecution.Class2@2892d68]" started-at="2023-11-22T10:43:07 IST" name="login" finished-at="2023-11-22T10:43:11 IST" duration-ms="4008" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC11 -->
-        <test-method is-config="true" signature="TC10()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC10" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="method4()[pri:0, instance:LearnTestNGExecution.Class2@2892d68]" started-at="2023-11-22T10:43:11 IST" name="method4" finished-at="2023-11-22T10:43:11 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC10 -->
-        <test-method is-config="true" signature="TC4()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC4" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method4 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:LearnTestNGExecution.Class2@2892d68]" started-at="2023-11-22T10:43:11 IST" name="logout" finished-at="2023-11-22T10:43:16 IST" duration-ms="4853" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC4 -->
-        <test-method is-config="true" signature="TC5()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC5" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:LearnTestNGExecution.Class2@2892d68]" started-at="2023-11-22T10:43:16 IST" name="CloseBrowser" finished-at="2023-11-22T10:43:16 IST" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC5 -->
-        <test-method is-config="true" signature="TC6()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC6" finished-at="2023-11-21T09:56:55 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC6 -->
-        <test-method is-config="true" signature="TC2()[pri:0, instance:LearnAnnotation.SecondClass@71ba6d4e]" started-at="2023-11-21T09:56:55 IST" name="TC2" finished-at="2023-11-21T09:56:55 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC2 -->
-      </class> <!-- LearnAnnotation.SecondClass -->
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- LearnTestNGExecution.Class2 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

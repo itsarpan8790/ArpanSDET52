@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practise_package.DataProviderGetData_20thNov">
+      <class name="com.bixi.BaseTestScripts.InternetBankingTest">
         <methods>
-          <include name="getData3"/>
+          <include name="confif_BM"/>
+          <include name="iBankingChangePassword"/>
+          <include name="confif_AC"/>
+          <include name="confif_BS"/>
         </methods>
-      </class> <!-- com.practise_package.DataProviderGetData_20thNov -->
+      </class> <!-- com.bixi.BaseTestScripts.InternetBankingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
