@@ -1,5 +1,8 @@
 package com.bixi.genericutility;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -20,7 +23,8 @@ public class ListenerImplementaion extends BaseClass implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		String FS = new JavaUtility().systemDateInformat() + result.getName();
+		String Timestamp = LocalDateTime.now().toString().replace(':', '-');
+		String FS = Timestamp+result.getName();
 		WebDriverUtility.takeScreenshot(sdriver, FS);
 	}
 
