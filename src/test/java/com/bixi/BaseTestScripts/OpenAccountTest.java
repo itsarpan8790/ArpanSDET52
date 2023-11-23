@@ -10,7 +10,7 @@ import com.bixi.genericutility.BaseClass;
 import com.bixi.pom.AccountRegistrationFormPage;
 import com.bixi.pom.Customer_RegForm_ConfirmPage;
 import com.bixi.pom.HomePage;
-@Listeners(com.bixi.genericutility.ListenerImplementaion.class)
+//@Listeners(com.bixi.genericutility.ListenerImplementaion.class)
 public class OpenAccountTest extends BaseClass {
 
 	@Test(groups="regression")

@@ -21,7 +21,7 @@ public class BaseClass {
 	public String PASSWORD;
 	public String NEWPASSWORD;
 
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void config_BS() throws Throwable {
 
 		CUSTOMERID = fUtil.readDataFromPropertyFile("customerId");
@@ -29,7 +29,7 @@ public class BaseClass {
 		NEWPASSWORD = fUtil.readDataFromPropertyFile("newpassword");
 	}
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void config_BC() throws Throwable {
 		String BROWSER = fUtil.readDataFromPropertyFile("browser");
 		// Opening Browser
@@ -45,14 +45,14 @@ public class BaseClass {
 		wUtil.maximizeWindow(driver);
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void config_BM() throws Throwable {
 		wUtil.implicitWait(driver, 10);
 		String URL = fUtil.readDataFromPropertyFile("url");
 		driver.get(URL);
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void config_AM() {
 		wUtil.minimizeWindow(driver);
 		driver.close();

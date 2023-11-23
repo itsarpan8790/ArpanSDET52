@@ -12,7 +12,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import com.beust.jcommander.Parameter;
 import com.bixi.genericutility.FileUtility;
 
 public class BaseClass {

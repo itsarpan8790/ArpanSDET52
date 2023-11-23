@@ -1,18 +1,9 @@
 package com.bixi.Optimisedtestscripts;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.time.Duration;
-import java.util.Properties;
-import java.util.Random;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.idealized.Javascript;
-import org.openqa.selenium.interactions.Actions;
 
 import com.bixi.genericutility.ExcelUtility;
 import com.bixi.genericutility.FileUtility;

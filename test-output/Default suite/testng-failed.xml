@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bixi.BaseTestScripts.OpenAccountTest">
+      <class name="com.bixi.BaseTestScripts.InternetBankingTest">
         <methods>
           <include name="config_AM"/>
           <include name="config_BM"/>
-          <include name="applyNewBankAccount_NeyazTC05"/>
+          <include name="iBankingChangePassword"/>
           <include name="config_BS"/>
           <include name="config_BC"/>
         </methods>
-      </class> <!-- com.bixi.BaseTestScripts.OpenAccountTest -->
+      </class> <!-- com.bixi.BaseTestScripts.InternetBankingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

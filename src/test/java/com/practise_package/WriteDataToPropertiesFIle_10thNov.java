@@ -1,7 +1,6 @@
 package com.practise_package;
 
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 

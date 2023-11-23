@@ -40,5 +40,12 @@ public class CustomerLoginPage {
 		loginBtn.click();
 
 	}
+	
+	public void loginAsCutomer2(String UN, String PW) {
+		custIdTextBx.sendKeys(UN);
+		passwordTextBx.sendKeys(PW);
+		loginBtn.click();
+
+	}
 
 }

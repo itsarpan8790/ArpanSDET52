@@ -2,8 +2,6 @@ package com.practise_package;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
-import java.util.HashMap;
-import java.util.Map.Entry;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
