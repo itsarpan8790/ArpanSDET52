@@ -3,11 +3,16 @@ package com.bixi.genericutility;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -262,6 +267,21 @@ public class WebDriverUtility {
 	public void scrollAction(WebDriver driver, WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("argument[0].scrollIntoView(true);", element);
+	}
+	
+	public static String takeScreenshot(WebDriver sdriver,String SSNAME) {
+		TakesScreenshot ts=(TakesScreenshot) sdriver;
+		String path="./screenshots"+SSNAME+".png";
+		File src = ts.getScreenshotAs(OutputType.FILE);
+		File dst = new File(path);
+		try {
+			FileUtils.copyFile(src, dst);
+		} catch (IOException e) {
+			 
+		}
+		return path;
+		
+		
 	}
 
 }

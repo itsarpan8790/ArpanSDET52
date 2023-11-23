@@ -1,6 +1,7 @@
 package com.bixi.BaseTestScripts;
 
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.bixi.genericutility.BaseClass;
@@ -9,10 +10,10 @@ import com.bixi.pom.Customer_Pass_ChangePage;
 import com.bixi.pom.Customer_ProfilePage;
 import com.bixi.pom.Ebanking_Reg_FormPage;
 import com.bixi.pom.HomePage;
-
+@Listeners(com.bixi.genericutility.ListenerImplementaion.class)
 public class InternetBankingTest extends BaseClass {
 
-	@Test(groups = "system")
+	@Test(groups = "system",priority = 2)
 	public void iBankingChangePassword() throws Throwable {
 
 		// Step 1. MouseHovering and clicking Login
@@ -59,7 +60,7 @@ public class InternetBankingTest extends BaseClass {
 
 	}
 
-	@Test(groups = "smoke")
+	@Test(groups = "smoke",priority = 1)
 	public void registerForIBAnotherTab() throws Throwable {
 
 		HomePage hp = new HomePage(driver);
@@ -79,11 +80,11 @@ public class InternetBankingTest extends BaseClass {
 		String expTitle = "Internet Banking Registration";
 		String actTitle = driver.getTitle();
 		if (actTitle.equals(expTitle))
-			System.out.println("Internet Banking Registration Page is Displayed");
+			System.out.println("Internet Banking Registration Page is Displayed and Verified");
 
 	}
 
-	@Test(groups = "smoke")
+	@Test(groups = "smoke",priority = 0)
 	public void regiterForIBankingAndRefresh_ManTC13() throws Throwable {
 
 		HomePage hp = new HomePage(driver);
@@ -109,7 +110,7 @@ public class InternetBankingTest extends BaseClass {
 
 		// validation
 
-		System.out.println("Passed");// doubt
+		System.out.println("Passed and Verified");// doubt
 
 	}
 }

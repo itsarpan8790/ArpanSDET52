@@ -20,8 +20,14 @@ public class DebitCardTest extends BaseClass {
 		Debit_Card_FormPage dcf = new Debit_Card_FormPage(driver);
 		dcf.getSubmitBtn().click();
 
-		String errormsg = wUtil.getAlertPopUpText(driver);
-		System.out.println("Error message displayed as: " + errormsg);
+		String expText="No field should be empty";
+		String actText = wUtil.getAlertPopUpText(driver);
+		
+		//Validation
+		if(actText.equals(expText))
+		System.out.println("Error message is Displayed and is Verified");
+		else
+			System.out.println("Error message not Displayed and Verified and Failed");
 		Thread.sleep(5000);
 		wUtil.handleAlertPopUp(driver);
 

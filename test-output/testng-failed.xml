@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="smoke"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LearnTestNGExecution.Class1">
+      <class name="com.bixi.BaseTestScripts.OpenAccountTest">
         <methods>
-          <include name="openBrowser"/>
-          <include name="CloseBrowser"/>
-          <include name="method1"/>
+          <include name="config_AM"/>
+          <include name="config_BM"/>
+          <include name="applyNewBankAccount_NeyazTC05"/>
+          <include name="config_BS"/>
+          <include name="config_BC"/>
         </methods>
-      </class> <!-- LearnTestNGExecution.Class1 -->
-      <class name="LearnTestNGExecution.Class2">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="CloseBrowser"/>
-          <include name="method4"/>
-        </methods>
-      </class> <!-- LearnTestNGExecution.Class2 -->
+      </class> <!-- com.bixi.BaseTestScripts.OpenAccountTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

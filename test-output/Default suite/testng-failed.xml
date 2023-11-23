@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bixi.BaseTestScripts.DebitCardTest">
+      <class name="com.bixi.BaseTestScripts.OpenAccountTest">
         <methods>
-          <include name="confif_BM"/>
-          <include name="applyForDebitCardWithBlankFields_NeyazTC15"/>
-          <include name="confif_AC"/>
-          <include name="confif_BS"/>
+          <include name="config_AM"/>
+          <include name="config_BM"/>
+          <include name="applyNewBankAccount_NeyazTC05"/>
+          <include name="config_BS"/>
+          <include name="config_BC"/>
         </methods>
-      </class> <!-- com.bixi.BaseTestScripts.DebitCardTest -->
+      </class> <!-- com.bixi.BaseTestScripts.OpenAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
