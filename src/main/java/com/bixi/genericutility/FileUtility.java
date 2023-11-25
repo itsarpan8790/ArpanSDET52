@@ -1,6 +1,7 @@
 package com.bixi.genericutility;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.Properties;
 
 public class FileUtility {
@@ -21,4 +22,15 @@ public class FileUtility {
 		return value;
 
 	}
+
+	public void writeDataToPropertyFile(String key, String value) throws Throwable {
+		FileInputStream fisP = new FileInputStream(".\\src\\test\\resources\\changePassword.properties");
+		Properties p = new Properties();
+		p.load(fisP);
+		p.setProperty(key, value);
+
+		FileOutputStream fiso = new FileOutputStream(".\\src\\test\\resources\\changePassword.properties");
+		p.store(fiso, "updated");
+	}
+
 }

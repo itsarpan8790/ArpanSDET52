@@ -3,9 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.bixi.BaseTestScripts.OpenAccountTest"/>
-      <class name="com.bixi.BaseTestScripts.DebitCardTest"/>
-      <class name="com.bixi.BaseTestScripts.InternetBankingTest"/>
+      <class name="com.bixi.BaseTestScripts.InternetBankingTest">
+		  <methods>
+			  <include name="iBankingChangePassword"></include>
+		  </methods>
+	  </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

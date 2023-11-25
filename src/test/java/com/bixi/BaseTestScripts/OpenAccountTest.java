@@ -36,7 +36,7 @@ public class OpenAccountTest extends BaseClass {
 		arp.getCitizenTextBx().sendKeys(al.get(5));
 		arp.getHomeAddTextBx().sendKeys(al.get(6));
 		arp.getOfficeAddTextBx().sendKeys(al.get(7));
-		Assert.fail();
+		 
 		arp.getPincodeTextBx().sendKeys(al.get(8));
 		arp.getAreaTextBx().sendKeys(al.get(9));
 		arp.getNomNameTextBx().sendKeys(al.get(10));

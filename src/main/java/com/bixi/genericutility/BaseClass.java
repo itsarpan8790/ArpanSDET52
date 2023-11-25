@@ -7,6 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
@@ -28,9 +29,9 @@ public class BaseClass {
 		PASSWORD = fUtil.readDataFromPropertyFile("password");
 		NEWPASSWORD = fUtil.readDataFromPropertyFile("newpassword");
 	}
-
+@Parameters("gateway")
 	@BeforeClass(alwaysRun = true)
-	public void config_BC() throws Throwable {
+	public void config_BC(String gateway) throws Throwable {
 		String BROWSER = fUtil.readDataFromPropertyFile("browser");
 		// Opening Browser
 		if (BROWSER.equals("chrome")) {

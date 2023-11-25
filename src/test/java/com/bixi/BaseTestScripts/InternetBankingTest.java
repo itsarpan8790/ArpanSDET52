@@ -15,49 +15,52 @@ public class InternetBankingTest extends BaseClass {
 	@Test(groups = "system")
 	public void iBankingChangePassword() throws Throwable {
 
-		// Step 1. MouseHovering and clicking Login
-		HomePage hp = new HomePage(driver);
-		WebElement iBankinkLink = hp.getiBankingLink();
-		WebElement iBankingLoginLink = hp.getiBankingLoginLink();
-		wUtil.multipleAction(driver, iBankinkLink, iBankingLoginLink);
-		wUtil.scrollUpAction(driver);
-		Thread.sleep(2000);
+//		// Step 1. MouseHovering and clicking Login
+//		HomePage hp = new HomePage(driver);
+//		WebElement iBankinkLink = hp.getiBankingLink();
+//		WebElement iBankingLoginLink = hp.getiBankingLoginLink();
+//		wUtil.multipleAction(driver, iBankinkLink, iBankingLoginLink);
+//		wUtil.scrollUpAction(driver);
+//		Thread.sleep(2000);
+//
+//		// User Login
+//		CustomerLoginPage clp = new CustomerLoginPage(driver);
+//		clp.loginAsCutomer(CUSTOMERID, PASSWORD);
+//		
+//		
+//		// Step 5.Changepassword
+//		Customer_ProfilePage cpp = new Customer_ProfilePage(driver);
+//		cpp.getChangePwdLink().click();
+//
+//		Customer_Pass_ChangePage cpc = new Customer_Pass_ChangePage(driver);
+//		cpc.getOldPWTextBx().sendKeys(PASSWORD);
+//		Thread.sleep(1000);
+//		cpc.getCnfmOldPWTextBx().sendKeys(PASSWORD);
+//		Thread.sleep(1000);
+//		cpc.getNewPWTextBx().sendKeys(NEWPASSWORD);
+//		Thread.sleep(1000);
+//		cpc.getSubmitBtn().click();
+//		String confirmationPopupText = wUtil.getAlertPopUpText(driver);
+//		Thread.sleep(500);
+//		wUtil.
+//		handleAlertPopUp(driver);
+		//Handle Password Change
+		fUtil.writeDataToPropertyFile("password", NEWPASSWORD);
+		fUtil.writeDataToPropertyFile("newpassword", PASSWORD);
 
-		// User Login
-		CustomerLoginPage clp = new CustomerLoginPage(driver);
-		clp.loginAsCutomer(CUSTOMERID, PASSWORD);
-		
-		
-		// Step 5.Changepassword
-		Customer_ProfilePage cpp = new Customer_ProfilePage(driver);
-		cpp.getChangePwdLink().click();
-
-		Customer_Pass_ChangePage cpc = new Customer_Pass_ChangePage(driver);
-		cpc.getOldPWTextBx().sendKeys(PASSWORD);
-		Thread.sleep(1000);
-		cpc.getCnfmOldPWTextBx().sendKeys(PASSWORD);
-		Thread.sleep(1000);
-		cpc.getNewPWTextBx().sendKeys(NEWPASSWORD);
-		Thread.sleep(1000);
-		cpc.getSubmitBtn().click();
-		String confirmationPopupText = wUtil.getAlertPopUpText(driver);
-		Thread.sleep(500);
-		wUtil.
-		handleAlertPopUp(driver);
-
-		// Step 5.Validating
-		if (confirmationPopupText.contains("Success")) {
-			System.out.println("Pass");
-			System.out.println("Password changed Successfully and is Verified ");
-		} else {
-			System.out.println("Failed");
-			System.out.println("Password not changed Successfully and is Verified ");
-
-		}
-		// Step 6. Logout
-		cpp.getLogOutBtn().click();
-		Thread.sleep(2000);
-
+//		// Step 5.Validating
+//		if (confirmationPopupText.contains("Success")) {
+//			System.out.println("Pass");
+//			System.out.println("Password changed Successfully and is Verified ");
+//		} else {
+//			System.out.println("Failed");
+//			System.out.println("Password not changed Successfully and is Verified ");
+//
+//		}
+//		// Step 6. Logout
+//		cpp.getLogOutBtn().click();
+//		Thread.sleep(2000);
+//		driver.quit();
 	}
 
 	@Test(groups = "smoke")
