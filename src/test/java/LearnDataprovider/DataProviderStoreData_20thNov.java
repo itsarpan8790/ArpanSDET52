@@ -40,6 +40,7 @@ public class DataProviderStoreData_20thNov {
 	@DataProvider
 	public Object[][] excelStoreData() throws Throwable {
 		ExcelUtility eUtil = new ExcelUtility();
+		
 		Object[][] value = eUtil.dataProviderMethod("OrgLoc");
 		return value;
 	}

@@ -17,6 +17,23 @@ public class ListenerImplementaion extends BaseClass implements ITestListener {
 	ExtentSparkReporter htmlReport;
 	ExtentReports report;
 	ExtentTest test;
+	
+	@Override
+	public void onStart(ITestContext context) {
+		htmlReport = new ExtentSparkReporter("./ExtentReport/report.html");
+
+		htmlReport.config().setDocumentTitle("TestYantra");
+		htmlReport.config().setTheme(Theme.STANDARD);
+		htmlReport.config().setReportName("BIXI");
+
+		report = new ExtentReports();
+
+		report.attachReporter(htmlReport);
+		report.setSystemInfo("Base-Browser", "Chrome");
+		report.setSystemInfo("URL", "http://rmgtestingserver/domain/Online_Banking_System/");
+		report.setSystemInfo("Reporter_Name", "Arpan");
+
+	}
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -37,12 +54,14 @@ public class ListenerImplementaion extends BaseClass implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		String Timestamp = LocalDateTime.now().toString().replace(':', '-');
 		String FS = Timestamp + result.getName();
-		test.addScreenCaptureFromPath(FS);
+		
 		WebDriverUtility.takeScreenshot(sdriver, FS);// Trycatch
 
 		test.log(Status.FAIL, result.getThrowable());
 		test.log(Status.FAIL, FS + "  is Failed");
 		Reporter.log(FS + " --TestScript Execution Failed");
+		
+		test.addScreenCaptureFromPath(FS);
 	}
 
 	@Override
@@ -53,22 +72,7 @@ public class ListenerImplementaion extends BaseClass implements ITestListener {
 		Reporter.log(METHODNAME + " --TestScript Execution Skipped");
 	}
 
-	@Override
-	public void onStart(ITestContext context) {
-		htmlReport = new ExtentSparkReporter("./ExtentReport/report.html");
-
-		htmlReport.config().setDocumentTitle("TestYantra");
-		htmlReport.config().setTheme(Theme.STANDARD);
-		htmlReport.config().setReportName("BIXI");
-
-		report = new ExtentReports();
-
-		report.attachReporter(htmlReport);
-		report.setSystemInfo("Base-Browser", "Chrome");
-		report.setSystemInfo("URL", "http://rmgtestingserver/domain/Online_Banking_System/");
-		report.setSystemInfo("Reporter_Name", "Arpan");
-
-	}
+	
 
 	@Override
 	public void onFinish(ITestContext context) {

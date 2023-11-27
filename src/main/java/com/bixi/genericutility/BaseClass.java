@@ -29,9 +29,9 @@ public class BaseClass {
 		PASSWORD = fUtil.readDataFromPropertyFile("password");
 		NEWPASSWORD = fUtil.readDataFromPropertyFile("newpassword");
 	}
-@Parameters("gateway")
+//@Parameters("gateway")
 	@BeforeClass(alwaysRun = true)
-	public void config_BC(String gateway) throws Throwable {
+	public void config_BC() throws Throwable {
 		String BROWSER = fUtil.readDataFromPropertyFile("browser");
 		// Opening Browser
 		if (BROWSER.equals("chrome")) {
