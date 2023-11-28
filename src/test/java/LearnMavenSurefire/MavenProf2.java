@@ -2,7 +2,7 @@ package LearnMavenSurefire;
 
 import org.testng.annotations.Test;
 
-public class RandomTest2 {
+public class MavenProf2 {
 	
 	@Test(groups = "smoke")
 	public void Tc3(){
