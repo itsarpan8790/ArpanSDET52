@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 
 	public WebDriver driver;
@@ -25,9 +27,12 @@ public class BaseClass {
 	@BeforeSuite(alwaysRun = true)
 	public void config_BS() throws Throwable {
 
-		CUSTOMERID = fUtil.readDataFromPropertyFile("customerId");
-		PASSWORD = fUtil.readDataFromPropertyFile("password");
-		NEWPASSWORD = fUtil.readDataFromPropertyFile("newpassword");
+//		CUSTOMERID = fUtil.readDataFromPropertyFile("customerId");
+//		PASSWORD = fUtil.readDataFromPropertyFile("password");
+//		NEWPASSWORD = fUtil.readDataFromPropertyFile("newpassword");
+		CUSTOMERID = eUtil.readDataFromExcelFile("NeyazUTC_05", 0, 8);
+		PASSWORD = eUtil.readDataFromExcelFile("NeyazUTC_05", 1, 8);
+		NEWPASSWORD = eUtil.readDataFromExcelFile("NeyazUTC_05", 2, 8);
 	}
 //@Parameters("gateway")
 	@BeforeClass(alwaysRun = true)

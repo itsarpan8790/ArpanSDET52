@@ -82,27 +82,7 @@
 
 	<profiles>
 		<profile>
-			<id>smoke</id>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-surefire-plugin</artifactId>
-							<version>3.2.2</version>
-							<configuration>
-								<suiteXmlFiles>
-									<suiteXmlFile>LearnMavenProfilingSmoke</suiteXmlFile>
-								</suiteXmlFiles>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-			</build>
-		</profile>
 
-		<profile>
-			<id>regression</id>
 			<build>
 				<pluginManagement>
 					<plugins>
@@ -112,7 +92,7 @@
 							<version>3.2.2</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>LearnMavenProfilingRegression</suiteXmlFile>
+									<suiteXmlFile></suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
@@ -121,4 +101,6 @@
 			</build>
 		</profile>
 	</profiles>
+
+
 </project>

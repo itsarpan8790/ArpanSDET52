@@ -3,13 +3,13 @@
 <suite name="Suite">
 	<groups>
 		<run>
-			<include name="smoke"></include>
+			<include name="regression"></include>
 		</run>
 	</groups>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="LearnMavenSurefire.RandomTest2"/>
-      <class name="LearnMavenSurefire.RandomTest"/>
+      <class name="LearnMavenSurefire.MVNProf1"/>
+      <class name="LearnMavenSurefire.MVNProf2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

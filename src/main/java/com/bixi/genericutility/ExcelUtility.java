@@ -1,6 +1,7 @@
  package com.bixi.genericutility;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map.Entry;
@@ -64,6 +65,8 @@ public class ExcelUtility {
 		FileInputStream fisE = new FileInputStream(IpathConstants.ExcelPath);
 		Workbook wb = WorkbookFactory.create(fisE);
 		wb.getSheet(sheetName).createRow(row).createCell(cell).setCellValue(data);
+		FileOutputStream fisO=new FileOutputStream(IpathConstants.ExcelPath);
+		wb.write(fisO);
 
 	}
 

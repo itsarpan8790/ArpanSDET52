@@ -24,12 +24,12 @@ public class FileUtility {
 	}
 
 	public void writeDataToPropertyFile(String key, String value) throws Throwable {
-		FileInputStream fisP = new FileInputStream(".\\src\\test\\resources\\changePassword.properties");
+		FileInputStream fisP = new FileInputStream(IpathConstants.FilePath);
 		Properties p = new Properties();
 		p.load(fisP);
 		p.setProperty(key, value);
 
-		FileOutputStream fiso = new FileOutputStream(".\\src\\test\\resources\\changePassword.properties");
+		FileOutputStream fiso = new FileOutputStream(IpathConstants.FilePath);
 		p.store(fiso, "updated");
 	}
 

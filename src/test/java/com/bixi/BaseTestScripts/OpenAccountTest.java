@@ -10,10 +10,11 @@ import com.bixi.genericutility.BaseClass;
 import com.bixi.pom.AccountRegistrationFormPage;
 import com.bixi.pom.Customer_RegForm_ConfirmPage;
 import com.bixi.pom.HomePage;
+
 //@Listeners(com.bixi.genericutility.ListenerImplementaion.class)
 public class OpenAccountTest extends BaseClass {
 
-	@Test(groups="regression")
+	@Test(groups = "regression")
 	public void applyNewBankAccount_NeyazTC05() throws Throwable {
 
 		ArrayList<String> al = new ArrayList<String>();
@@ -29,6 +30,7 @@ public class OpenAccountTest extends BaseClass {
 		// Entering Textfields
 		int ranNum = jUtil.getRandomNumber();
 		arp.getNameTextBx().sendKeys(al.get(0) + ranNum);
+		Thread.sleep(5000);
 		arp.getMobTextBx().sendKeys(al.get(1));
 		arp.getEmailTextBx().sendKeys(al.get(2));
 		arp.getLandLineTextBx().sendKeys(al.get(3));
@@ -36,7 +38,7 @@ public class OpenAccountTest extends BaseClass {
 		arp.getCitizenTextBx().sendKeys(al.get(5));
 		arp.getHomeAddTextBx().sendKeys(al.get(6));
 		arp.getOfficeAddTextBx().sendKeys(al.get(7));
-		 
+
 		arp.getPincodeTextBx().sendKeys(al.get(8));
 		arp.getAreaTextBx().sendKeys(al.get(9));
 		arp.getNomNameTextBx().sendKeys(al.get(10));

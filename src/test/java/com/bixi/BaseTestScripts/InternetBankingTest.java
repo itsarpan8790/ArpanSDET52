@@ -44,9 +44,15 @@ public class InternetBankingTest extends BaseClass {
 		Thread.sleep(500);
 		wUtil.
 		handleAlertPopUp(driver);
-		//Handle Password Change
-		fUtil.writeDataToPropertyFile("password", NEWPASSWORD);
-		fUtil.writeDataToPropertyFile("newpassword", PASSWORD);
+		//Handle Password Change PropertyFile
+//		fUtil.writeDataToPropertyFile("password", NEWPASSWORD);
+//		fUtil.writeDataToPropertyFile("newpassword", PASSWORD);
+		
+		//Handle Password Change Excel
+		eUtil.writeDataIntoExcel("NeyazUTC_05", 1, 8, NEWPASSWORD);
+		eUtil.writeDataIntoExcel("NeyazUTC_05", 2, 8, PASSWORD);
+		System.out.println("Excel Update successfully");
+		
 
 		// Step 5.Validating
 		if (confirmationPopupText.contains("Success")) {
