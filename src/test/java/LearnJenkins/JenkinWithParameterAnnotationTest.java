@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@Parameters({ "Browser", "Url" })
 public class JenkinWithParameterAnnotationTest {
 	WebDriver driver;
 
+	@Parameters({ "Browser", "Url" })
 	@Test
 	public void test(String BROWSER, String URL) {
 
