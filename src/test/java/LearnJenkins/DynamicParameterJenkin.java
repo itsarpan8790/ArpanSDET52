@@ -13,8 +13,8 @@ public class DynamicParameterJenkin {
 
 	@Test
 	public void test() {
-		String BROWSER = System.getProperty("browser");
-		String URL = System.getProperty("url");
+		String BROWSER = System.getProperty("S_browser"); //S_browser=Script Browser
+		String URL = System.getProperty("S_url");
 
 		if (BROWSER.equalsIgnoreCase("chrome"))
 			driver = new ChromeDriver();
