@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -12,6 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class JenkinWithParameterAnnotation {
 	WebDriver driver;
 
+	@Test
 	public void test(String BROWSER, String URL) {
 
 		if (BROWSER.equalsIgnoreCase("chrome"))
