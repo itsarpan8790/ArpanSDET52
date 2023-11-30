@@ -64,7 +64,7 @@ public class ExcelUtility {
 			throws EncryptedDocumentException, IOException {
 		FileInputStream fisE = new FileInputStream(IpathConstants.ExcelPath);
 		Workbook wb = WorkbookFactory.create(fisE);
-		wb.getSheet(sheetName).createRow(row).createCell(cell).setCellValue(data);
+		wb.getSheet(sheetName).getRow(row).createCell(cell).setCellValue(data);
 		FileOutputStream fisO=new FileOutputStream(IpathConstants.ExcelPath);
 		wb.write(fisO);
 
