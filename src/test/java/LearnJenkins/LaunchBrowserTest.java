@@ -6,15 +6,14 @@ import org.testng.annotations.Test;
 
 public class LaunchBrowserTest {
 	WebDriver driver;
-	
-	
+
 	@Test
 	public void test() {
-		
-		driver=new ChromeDriver();
+          
+		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
-		System.out.println("--Done------");
-		
+		System.out.println("--Performed---Done------");
+
 	}
 
 }
