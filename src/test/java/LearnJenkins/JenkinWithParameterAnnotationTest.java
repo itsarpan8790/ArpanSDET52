@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class JenkinWithParameterAnnotationTest {
 	WebDriver driver;
 
-	@Parameters({ "Browser", "Url" })
+	@Parameters({ "P_Browser", "P_Url" })
 	@Test
 	public void test(String BROWSER, String URL) {
 
