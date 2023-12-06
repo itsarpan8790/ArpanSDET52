@@ -23,6 +23,7 @@ public class ArrayListPractise {
 		list.add(30);
 		list.add(60);
 		list.add(10);
+	
 		//list.add(null); NullPointerException
 		Collections.sort(list);
 		
