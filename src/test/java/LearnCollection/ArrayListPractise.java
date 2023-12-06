@@ -3,7 +3,7 @@ package LearnCollection;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class CollectionPractise {
+public class ArrayListPractise {
 	public static void main(String[] args) {
 		ArrayList<Object> al = new ArrayList<Object>();
 		al.add("Arpan");
