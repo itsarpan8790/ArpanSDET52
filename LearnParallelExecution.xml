@@ -7,13 +7,14 @@
 			<class name="LearnTestNGExecution.Class2" />
 
 		</classes>
-	</test> <!--
-	Test -->
+	</test> <!--Test -->
 
 	<test thread-count="2" name="Test2">
 		<classes>
 
 			<class name="LearnTestNGExecution.Class3" />
+				
+			
 			<class name="LearnTestNGExecution.Class4" />
 		</classes>
 	</test> <!--

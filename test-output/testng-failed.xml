@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bixi.BaseTestScripts.InternetBankingTest">
+      <class name="LearnJava.C1P1_CheckScope">
         <methods>
-          <include name="config_AM"/>
-          <include name="config_BM"/>
-          <include name="iBankingChangePassword"/>
-          <include name="config_BS"/>
-          <include name="config_BC"/>
+          <include name="method1"/>
         </methods>
-      </class> <!-- com.bixi.BaseTestScripts.InternetBankingTest -->
+      </class> <!-- LearnJava.C1P1_CheckScope -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

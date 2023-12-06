@@ -23,8 +23,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class WebDriverUtility {
 
 	/**
-	 * @author arpan
-	 * This Method will maximize the Window
+	 * @author arpan This Method will maximize the Window
 	 * 
 	 * @param driver
 	 */
@@ -48,7 +47,7 @@ public class WebDriverUtility {
 	 * 
 	 * @param Driver
 	 */
-	public void implicitWait(WebDriver driver,int sec) {
+	public void implicitWait(WebDriver driver, int sec) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(sec));
 	}
 
@@ -122,7 +121,6 @@ public class WebDriverUtility {
 		Actions act = new Actions(driver);
 		act.contextClick().perform();
 	}
-	
 
 	public void dragAndDropAction(WebDriver driver, WebElement src, WebElement dest) {
 		Actions act = new Actions(driver);
@@ -141,14 +139,12 @@ public class WebDriverUtility {
 		act.doubleClick().perform();
 
 	}
-	
-	public void multipleAction(WebDriver driver,WebElement ele1,WebElement ele2) {
+
+	public void multipleAction(WebDriver driver, WebElement ele1, WebElement ele2) {
 		Actions act = new Actions(driver);
 		act.moveToElement(ele1).moveToElement(ele2).click().perform();
 
 	}
-	
-	
 
 	public void sendKeysAction(WebDriver driver) {
 		Actions act = new Actions(driver);
@@ -262,26 +258,23 @@ public class WebDriverUtility {
 		js.executeScript("window.scrollBy(-500,0)", "");
 	}
 
-
-
 	public void scrollAction(WebDriver driver, WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("argument[0].scrollIntoView(true);", element);
 	}
-	
-	public static String takeScreenshot(WebDriver sdriver,String SSNAME) {
-		TakesScreenshot ts=(TakesScreenshot) sdriver;
-		String path="./Screenshots/"+SSNAME+".png";
+
+	public static String takeScreenshot(WebDriver sdriver, String SSNAME) {
+		TakesScreenshot ts = (TakesScreenshot) sdriver;
+		String path = "./Screenshots/" + SSNAME + ".png";
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		File dst = new File(path);
 		try {
 			FileUtils.copyFile(src, dst);
 		} catch (IOException e) {
-			 
+
 		}
 		return path;
-		
-		
+
 	}
 
 }
