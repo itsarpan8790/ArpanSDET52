@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 
-import org.apache.commons.collections4.iterators.ArrayListIterator;
-
 public class HashSetPractise {
 	public static void main(String[] args) {
 		HashSet<Object> hs = new HashSet<Object>();
@@ -20,7 +18,12 @@ public class HashSetPractise {
 		hs.add("Duplicate2");
 		hs.add(50);
 		hs.add("Arpan");
-		System.out.println("Printing Hashset Directly---> "+hs);
+
+		System.out.println("Printing HashSet through Iterator");
+		Iterator<Object> itHS = hs.iterator();
+		while (itHS.hasNext()) {
+			System.out.println(itHS.next());
+		}
 
 		ArrayList<Object> al = new ArrayList<Object>();
 		al.add(10);
@@ -28,12 +31,11 @@ public class HashSetPractise {
 		al.add(null);
 		al.add(null);
 
-		System.out.println("ArrayList Directly Printing----> " + al);
-
-		System.out.println("Printing through Iterator");
-		Iterator<Object> it = al.iterator();
-		while (it.hasNext()) {
-			System.out.println(it.next());
+		System.out.println("Printing ArrayList through Iterator");
+		Iterator<Object> itAL = al.iterator();
+		while (itAL.hasNext()) {
+			System.out.println(itAL.next());
 		}
+
 	}
 }
