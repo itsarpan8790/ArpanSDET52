@@ -25,7 +25,7 @@ public class SpiceJetEndToEnd_Test {
 		driver.get("https://www.spicejet.com/");
 
 		// Taking Departure date
-		String month = "November";
+		String month = "December";
 		String year = "2023";
 		String date = "18";
 		String adult = "3";
@@ -45,8 +45,10 @@ public class SpiceJetEndToEnd_Test {
 		a.click(dest).sendKeys("Del").perform();
 
 		// selecting Departuredate
-		driver.findElement(By.xpath("//div[text()='" + month + " ']/../..//div[text()='" + date + "']")).click();
-
+		//driver.findElement(By.xpath("//div[text()='" + month + " ']/../..//div[text()='" + date + "']")).click();
+		driver.findElement(By.xpath("//div[contains(.,'"+month+"' ) and text()='"+year+"']/../..//div[text()='"+date+"']")).click();
+		
+		
 		// Clicking Passengers Dropdown
 		driver.findElement(By.xpath("//div[text()='Passengers']")).click();
 		Thread.sleep(2000);

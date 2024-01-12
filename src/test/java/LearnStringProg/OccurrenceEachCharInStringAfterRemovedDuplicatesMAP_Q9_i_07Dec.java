@@ -17,7 +17,7 @@ public class OccurrenceEachCharInStringAfterRemovedDuplicatesMAP_Q9_i_07Dec {
 				hm.put(str.charAt(i), 1);
 		}
 		for (Entry<Character, Integer> map : hm.entrySet()) {
-			System.out.println(map.getKey() + " " + map.getValue());
+			System.out.print(map.getKey() + ""+ map.getValue());
 		}
 
 	}
