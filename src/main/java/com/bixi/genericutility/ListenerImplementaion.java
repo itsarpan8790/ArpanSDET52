@@ -56,12 +56,13 @@ public class ListenerImplementaion extends BaseClass implements ITestListener {
 		String FS = Timestamp + result.getName();
 		
 		WebDriverUtility.takeScreenshot(sdriver, FS);// Trycatch
-
+		test.addScreenCaptureFromPath(FS);
+		
 		test.log(Status.FAIL, result.getThrowable());
 		test.log(Status.FAIL, FS + "  is Failed");
 		Reporter.log(FS + " --TestScript Execution Failed");
 		
-		test.addScreenCaptureFromPath(FS);
+		
 	}
 
 	@Override

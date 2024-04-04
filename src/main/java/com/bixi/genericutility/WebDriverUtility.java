@@ -265,8 +265,10 @@ public class WebDriverUtility {
 
 	public static String takeScreenshot(WebDriver sdriver, String SSNAME) {
 		TakesScreenshot ts = (TakesScreenshot) sdriver;
-		String path = "./Screenshots/" + SSNAME + ".png";
+
 		File src = ts.getScreenshotAs(OutputType.FILE);
+
+		String path = "./Screenshots/" + SSNAME + ".png";
 		File dst = new File(path);
 		try {
 			FileUtils.copyFile(src, dst);

@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LearnJava.C1P1_CheckScope">
+      <class name="LearnTestNGExecution.SarC1">
         <methods>
+          <include name="method2"/>
           <include name="method1"/>
         </methods>
-      </class> <!-- LearnJava.C1P1_CheckScope -->
+      </class> <!-- LearnTestNGExecution.SarC1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
