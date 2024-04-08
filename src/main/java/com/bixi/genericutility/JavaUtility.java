@@ -34,6 +34,7 @@ public class JavaUtility {
 	 */
 	public String systemDateInformat() {
 		Date date=new Date();
+		
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH-mm-ss");
 		String sysDateTime = formatter.format(date);
 		return sysDateTime;

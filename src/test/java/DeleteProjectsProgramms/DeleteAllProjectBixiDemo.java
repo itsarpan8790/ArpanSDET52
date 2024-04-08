@@ -21,8 +21,8 @@ public class DeleteAllProjectBixiDemo {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		driver.get("http://rmgtestingserver/domain/Online_Banking_System/");
+//		WebDriverWait wait = new WebDriverWait(driver, 10);
+//		driver.get("http://rmgtestingserver/domain/Online_Banking_System/");
 
 		driver.findElement(By.linkText("Staff Login")).click();
 		driver.findElement(By.xpath("//input[@name='staff_id']")).sendKeys("210001");

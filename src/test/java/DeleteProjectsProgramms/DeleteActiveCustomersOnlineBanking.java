@@ -22,8 +22,8 @@ public class DeleteActiveCustomersOnlineBanking {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+//		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+//		WebDriverWait wait = new WebDriverWait(driver, 5);
 		driver.get("http://rmgtestingserver/domain/Online_Banking_System/");
 
 		driver.findElement(By.linkText("Staff Login")).click();
@@ -58,7 +58,7 @@ public class DeleteActiveCustomersOnlineBanking {
 			driver.findElement(By.xpath("//input[@name='delete']")).click();
 //			
 			try {
-				wait.until(ExpectedConditions.alertIsPresent());
+				//wait.until(ExpectedConditions.alertIsPresent());
 				driver.switchTo().alert().accept();
 			} catch (Exception e) {
 				System.out.println("handled");
