@@ -10,7 +10,7 @@ public class RetryAnalyserImp implements IRetryAnalyzer {
 	
 	@Override
 	public boolean retry(ITestResult result) {
-		if(count<=limit) {
+		while(count<=limit) {
 			count++;
 			return true;
 		}

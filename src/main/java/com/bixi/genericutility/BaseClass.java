@@ -40,7 +40,8 @@ public class BaseClass {
 		String BROWSER = fUtil.readDataFromPropertyFile("browser");
 		// Opening Browser
 		if (BROWSER.equals("chrome")) {
-			// System.out.println(BROWSER);
+			 System.out.println(BROWSER);
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (BROWSER.equals("firefox"))
 			driver = new FirefoxDriver();

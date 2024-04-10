@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LearnTestNGExecution.SarC1">
+      <class name="LearnListeners.Class1">
         <methods>
-          <include name="method2"/>
-          <include name="method1"/>
+          <include name="config_AM"/>
+          <include name="config_BM"/>
+          <include name="config_BS"/>
+          <include name="config_BC"/>
+          <include name="c1M2"/>
         </methods>
-      </class> <!-- LearnTestNGExecution.SarC1 -->
+      </class> <!-- LearnListeners.Class1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

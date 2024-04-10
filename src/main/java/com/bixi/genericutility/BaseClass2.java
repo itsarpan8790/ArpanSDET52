@@ -20,7 +20,7 @@ public class BaseClass2 {
 	public String PASSWORD;
 	public String NEWPASSWORD;
 
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void config_BS() throws Throwable {
 		BROWSER = fUtil.readDataFromPropertyFile("browser");
 		URL = fUtil.readDataFromPropertyFile("url");
@@ -29,7 +29,7 @@ public class BaseClass2 {
 		NEWPASSWORD = fUtil.readDataFromPropertyFile("newpassword");
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void config_BM() {
 		// Opening Browser
 		if (BROWSER.equals("chrome")) {
@@ -44,9 +44,10 @@ public class BaseClass2 {
 		wUtil.maximizeWindow(driver);
 		wUtil.implicitWait(driver, 10);
 		driver.get(URL);
+		
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void config_AM() {
 		wUtil.minimizeWindow(driver);
 		driver.close();
